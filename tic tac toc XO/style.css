@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Farro:wght@300;400;500;700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Delicious Handrawn", cursive;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url(https://i.pinimg.com/564x/03/ff/7e/03ff7ebfeb371ca8660c06fe940d170a.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Txt h1{
+    color: rgb(54, 54, 203);
+}
+.Winner{
+    color: rgb(54, 54, 203);
+    font-size: 60px;
+}
+.Btn button{
+    background-color: transparent;
+    width: 160px;
+    height: 40px;
+    border: 2px solid rgb(54, 54, 203);
+    border-radius: 8px;
+    font-size: 22px;
+    color: rgb(54, 54, 203) ;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.Btn button:hover{
+    color: red;
+    background-color: rgba(0, 0, 255, 0.198);
+    font-size: 25px;
+    transition: 0.5s;
+}
+.Btn button:active{
+    background-color: rgb(110, 110, 252);
+}
+.Box{
+    border: 4px solid rgb(54, 54, 203);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: none;
+    border-left: none;
+    cursor: pointer;
+}
+.Box p{
+    font-size: 80px;
+    color: rgb(54, 54, 203);
+}
+.Boxes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 460px;
+
+}
+.Boxes > :nth-child(3), .Boxes > :nth-child(6), .Boxes > :nth-child(9){
+    border-right: none;
+}
+
+.Boxes > :nth-child(7), .Boxes > :nth-child(8), .Boxes > :nth-child(9){
+    border-bottom: none;
+}
